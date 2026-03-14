@@ -3,7 +3,32 @@ guid: 41e5c7a485ba95f40861e555d2d1092d
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Engines
+    second: {fileID: 2100000, guid: ccca66788bba62e4781339a1830ce0b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Extras
+    second: {fileID: 2100000, guid: 842a681f8489f624fb977dbf0c43715f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: aef8639ef5a82e54f8dbfb6392b89565, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Soft parts
+    second: {fileID: 2100000, guid: fc324eaac9003a04c8f0e5ee2dcfb381, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: boat hard bits
+    second: {fileID: 2100000, guid: 337ac6febbb4ebd488c26dd65fbd3941, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
