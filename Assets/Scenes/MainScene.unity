@@ -1182,6 +1182,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7786044322809827658, guid: c51fc4ec05e7bab4fb48ca27eb5de601,
+        type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7786044322809827658, guid: c51fc4ec05e7bab4fb48ca27eb5de601,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7786044322809827658, guid: c51fc4ec05e7bab4fb48ca27eb5de601,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7786044322809827658, guid: c51fc4ec05e7bab4fb48ca27eb5de601,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1222662375}
+    - target: {fileID: 7786044322809827658, guid: c51fc4ec05e7bab4fb48ca27eb5de601,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7786044322809827658, guid: c51fc4ec05e7bab4fb48ca27eb5de601,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Move
+      objectReference: {fileID: 0}
+    - target: {fileID: 7786044322809827658, guid: c51fc4ec05e7bab4fb48ca27eb5de601,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7786044322809827658, guid: c51fc4ec05e7bab4fb48ca27eb5de601,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c51fc4ec05e7bab4fb48ca27eb5de601, type: 3}
 --- !u!1 &800993640
@@ -1488,6 +1528,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1222662375 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 981695108864181526, guid: c51fc4ec05e7bab4fb48ca27eb5de601,
+    type: 3}
+  m_PrefabInstance: {fileID: 751605871}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60a2eb966dc369b419fd039898f635c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1224738500
 GameObject:
   m_ObjectHideFlags: 0
