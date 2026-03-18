@@ -16,6 +16,10 @@ public class WinLoseUI : MonoBehaviour
 
     [Header("Lose UI")]
     [SerializeField] GameObject loseUI;
+    [SerializeField] TMP_Text loseReason;
+
+    [Header("Other")]
+    [SerializeField] List<GameObject> uiToDisable;
 
     private void Awake()
     {
@@ -31,13 +35,21 @@ public class WinLoseUI : MonoBehaviour
         TimeSpan time = TimeSpan.FromSeconds(Time.timeSinceLevelLoad);
         winTimer.text = timerPreface + time.ToString(@"mm\:ss\.ff");
 
+        foreach (var go in uiToDisable)
+            go.SetActive(false);
+
         Time.timeScale = 0f;
     }
 
-    public void Lose()
+    public void Lose(string reason = "")
     {
         gameObject.SetActive(true);
         loseUI.SetActive(true);
+        loseReason.text = reason;
+
+        foreach (var go in uiToDisable)
+            go.SetActive(false);
+
         Time.timeScale = 0f;
     }
 

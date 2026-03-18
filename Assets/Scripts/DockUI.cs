@@ -10,10 +10,6 @@ public class DockUI : MonoBehaviour
     [SerializeField] TMP_Text percentageText;
     [SerializeField] string percentageTextPreface;
     
-    void Awake()
-    {
-        SetActive(false);
-    }
 
     public void SetActive(bool active)
     {
