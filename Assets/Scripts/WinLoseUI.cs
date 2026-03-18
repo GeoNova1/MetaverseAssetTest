@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,7 +9,12 @@ public class WinLoseUI : MonoBehaviour
 {
     public static WinLoseUI Instance { get; private set; }
 
+    [Header("Win UI")]
     [SerializeField] GameObject winUI;
+    [SerializeField] TMP_Text winTimer;
+    [SerializeField] string timerPreface = "Time: ";
+
+    [Header("Lose UI")]
     [SerializeField] GameObject loseUI;
 
     private void Awake()
@@ -20,6 +27,10 @@ public class WinLoseUI : MonoBehaviour
     {
         gameObject.SetActive(true);
         winUI.SetActive(true);
+
+        TimeSpan time = TimeSpan.FromSeconds(Time.timeSinceLevelLoad);
+        winTimer.text = timerPreface + time.ToString(@"mm\:ss\.ff");
+
         Time.timeScale = 0f;
     }
 
