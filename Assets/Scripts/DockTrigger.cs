@@ -69,7 +69,6 @@ public class DockTrigger : MonoBehaviour
 
     IEnumerator Dock()
     {
-        print("Started Docking");
         timeSpentDocking = 0f;
         dockUI.SetDockingProgress(0f);
         dockUI.SetActive(true);
@@ -82,6 +81,6 @@ public class DockTrigger : MonoBehaviour
             yield return null;
         }
         
-        print("Finished Docking");
+        WinLoseUI.Instance.Win();
     }
 }
