@@ -38,11 +38,24 @@ Material:
     - _DeepDepthDistance: 3
     - _Depth: 5
     - _Gradient: 0.073
+    - _Normal1Scale: 500
+    - _Normal1Speed: 0
+    - _Normal1Strength: 2
+    - _Normal2Scale: 750
+    - _Normal2Speed: 0
+    - _Normal2Strength: 1
+    - _NormalScale1: 1000
+    - _NormalScale2: 3333
+    - _NormalStrength1: 1
+    - _NormalStrength2: 0.3
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ShallowToDeepGradient: 0.05
+    - _Test: 0.1
     m_Colors:
     - _DeepColor: {r: 0.3127893, g: 0.59068245, b: 0.9339623, a: 0.8509804}
+    - _Normal1Velocity: {r: 1, g: 1, b: 0, a: 0}
+    - _Normal2Velocity: {r: -0.7, g: -0.7, b: 0, a: 0}
     - _ShallowColor: {r: 0.630785, g: 0.98329765, b: 0.99056596, a: 0.19607843}
   m_BuildTextureStacks: []
 --- !u!114 &7538587131474826342
