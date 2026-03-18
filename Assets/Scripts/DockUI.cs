@@ -20,6 +20,6 @@ public class DockUI : MonoBehaviour
     public void SetDockingProgress(float percent)
     {
         radialImage.fillAmount = percent;
-        percentageText.text = percentageTextPreface + (percent * 100f).ToString("0") + "%";
+        percentageText.text = percentageTextPreface + percent.ToString("p0");
     }
 }
