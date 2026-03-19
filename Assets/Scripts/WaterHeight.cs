@@ -11,6 +11,8 @@ using UnityEngine;
 /// </summary>
 public class WaterHeight : MonoBehaviour
 {
+    public static WaterHeight Instance;
+
     [Header("Variables matching the water shader's material")]
     [SerializeField] float MacroAmplitude1;
     [SerializeField] float MacroAmplitude2;
@@ -24,30 +26,21 @@ public class WaterHeight : MonoBehaviour
     Material mat;
     float time;
 
+
     void Awake()
     {
+        Instance = this;
         mat = GetComponent<Renderer>().material;
     }
 
     void Update()
     {
         time = Time.timeSinceLevelLoad;
-        mat.SetFloat("_MyTime", time);    
+        mat.SetFloat("_MyTime", time);
     }
 
-    void OnDrawGizmosSelected()
-    {
-        for (int i = -500; i <= 500; i += 20)
-        {
-            for (int j = -500; j <= 500; j += 20)
-            {
-                float height = GetWaterHeightAtPosition(new Vector3(i, 0f, j));
-                Gizmos.DrawSphere(new Vector3(i, height, j), 1f);
-            }
-        }
-    }
 
-    float GetWaterHeightAtPosition(Vector3 position)
+    public float GetWaterHeightAtPosition(Vector3 position)
     {
         Vector3 localPos = transform.InverseTransformPoint(position);
 
@@ -80,5 +73,18 @@ public class WaterHeight : MonoBehaviour
     Vector2 TilingAndOffset(Vector2 uv, Vector2 tiling, Vector2 offset)
     {
         return (uv * tiling) + offset;
+    }
+
+
+    void OnDrawGizmosSelected()
+    {
+        for (int i = -500; i <= 500; i += 20)
+        {
+            for (int j = -500; j <= 500; j += 20)
+            {
+                float height = GetWaterHeightAtPosition(new Vector3(i, 0f, j));
+                Gizmos.DrawSphere(new Vector3(i, height, j), 1f);
+            }
+        }
     }
 }
