@@ -58,4 +58,10 @@ public class WinLoseUI : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void QuitLevel()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(0);
+    }
 }
