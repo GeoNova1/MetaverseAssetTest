@@ -39,8 +39,11 @@ public class PlayerController : MonoBehaviour
         }
         motorTrans.localRotation = Quaternion.RotateTowards(motorTrans.localRotation, targetRot, motorRotationSpeed * Time.deltaTime);
 
+
+        bool isSubmerged = motorTrans.position.y < WaterHeight.Instance.GetWaterHeightAtPosition(motorTrans.position);
+
         // Apply outboard motor force
-        if (moveInput.y != 0f)
+        if (moveInput.y != 0f && isSubmerged)
         {
             float forceMultiplier = moveInput.y > 0f ? motorForwardForce : -motorReverseForce;
             Vector3 force = motorTrans.forward * forceMultiplier;
