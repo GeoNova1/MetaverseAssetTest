@@ -2750,15 +2750,28 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 836499470, guid: c51fc4ec05e7bab4fb48ca27eb5de601, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 836499470, guid: c51fc4ec05e7bab4fb48ca27eb5de601, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 306959284053319341, guid: c51fc4ec05e7bab4fb48ca27eb5de601,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 306959284053319341, guid: c51fc4ec05e7bab4fb48ca27eb5de601,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 897188474725604767, guid: c51fc4ec05e7bab4fb48ca27eb5de601,
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 981695108864181526, guid: c51fc4ec05e7bab4fb48ca27eb5de601,
-        type: 3}
-      propertyPath: motorForwardForce
-      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6614353795174028754, guid: c51fc4ec05e7bab4fb48ca27eb5de601,
         type: 3}
