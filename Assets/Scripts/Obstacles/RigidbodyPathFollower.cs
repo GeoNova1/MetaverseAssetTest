@@ -7,28 +7,16 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class RigidbodyPathFollower : MonoBehaviour
 {
-    //CinemachinePathBase path;
     Rigidbody rb;
 
     [SerializeField] CinemachinePathBase path;
-
-    float pos;
     [SerializeField] float speed;
+    
+    float pos;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
-    }
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     void FixedUpdate()
