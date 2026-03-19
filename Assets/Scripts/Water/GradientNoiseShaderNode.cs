@@ -32,7 +32,6 @@ public class GradientNoiseShaderNode : MonoBehaviour
     {
         // Permutation and hashing used in webgl-nosie goo.gl/pX7HtC
         p = p % 289;
-        // need full precision, otherwise half overflows when p > 1
         float x = (34f * p.x + 1f) * p.x % 289f + p.y;
         x = (34 * x + 1) * x % 289;
         x = frac(x / 41) * 2 - 1;
