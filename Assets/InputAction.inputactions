@@ -1,5 +1,5 @@
 {
-    "name": "MetaverseAssetTest",
+    "name": "InputAction",
     "maps": [
         {
             "name": "Player",
@@ -260,6 +260,15 @@
             "name": "UI",
             "id": "154d1d74-bf37-4c90-871b-8e9e3456a891",
             "actions": [
+                {
+                    "name": "Quit",
+                    "type": "Button",
+                    "id": "9d7946a7-55e0-49bf-ab25-44f85e6374d1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
                 {
                     "name": "Navigate",
                     "type": "PassThrough",
@@ -767,6 +776,17 @@
                     "processors": "",
                     "groups": "XR",
                     "action": "TrackedDeviceOrientation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ea02b2d2-f728-45f3-a162-597ee8ef4879",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Quit",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
