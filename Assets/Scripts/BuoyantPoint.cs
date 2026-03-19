@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class BuoyantPoint : MonoBehaviour
 {
-    // TODO: reference water height and apply forces based off depth
-
     [SerializeField] float mass;
     [SerializeField] float height;
 
@@ -28,14 +26,6 @@ public class BuoyantPoint : MonoBehaviour
         float percentSubmerged = amountSubmerged / height;
 
         float force = -weight * percentSubmerged;
-
-        //print("weight" + weight);
-        //print("Force" + force);
-
-        if (force == 0f)
-            print("No force");
-        else
-            print("some force");
 
 
         rb.AddForceAtPosition(Vector3.up * force, transform.position);
