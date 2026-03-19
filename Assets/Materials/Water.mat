@@ -62,6 +62,7 @@ Material:
     - _MicroFrequency2: 200
     - _MicroStrength1: 250
     - _MicroStrength2: 125
+    - _MyTime: 0
     - _Normal1Scale: 200
     - _Normal1Speed: 0
     - _Normal1Strength: 1
